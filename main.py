@@ -16,6 +16,7 @@ with open('file.json','r') as file:
     a = json.load(file)
     b = 6
     c =77
+
     
 
 # Создание кнопки в чате [start] + вложенная функция
@@ -34,7 +35,8 @@ def get_user_text(message):
         bot.send_message(message.chat.id,'Нормально',parse_mode = 'html')
     elif message.text == 'Steam':
         bot.send_message(message.chat.id,a)
-    
+    elif message.text == 'Hello':
+        bot.send_message(message.chat.id,'Нi!',parse_mode = 'html')
     
 
 
