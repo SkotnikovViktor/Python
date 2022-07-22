@@ -15,6 +15,7 @@ def date_time():
 with open('file.json','r') as file:
     a = json.load(file)
     b = 6
+    c =77
     
 
 # Создание кнопки в чате [start] + вложенная функция
