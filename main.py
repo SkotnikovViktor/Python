@@ -9,6 +9,7 @@ bot = telebot.TeleBot('5505530308:AAGoiiUP5dD6GP6eM_3b5AfHJQrVdDXFXQI')
 
 with open('file.json','r') as file:
     a = json.load(file)
+    b = 222
 
 
     
