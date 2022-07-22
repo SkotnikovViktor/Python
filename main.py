@@ -1,21 +1,15 @@
 # Импорт библиотеки telebot и time
 import telebot
-import time 
 import json
 # Создание переменной с токеном
 bot = telebot.TeleBot('5505530308:AAGoiiUP5dD6GP6eM_3b5AfHJQrVdDXFXQI')
 
 # Функция которая узнает время
-def date_time():
-    t= time.localtime()
-    current_time = time.strftime("%H:%M:%S",t)
-    return current_time
 
 
 with open('file.json','r') as file:
     a = json.load(file)
-    b = 6
-    c =77
+
 
     
 
@@ -37,7 +31,7 @@ def get_user_text(message):
         bot.send_message(message.chat.id,a)
     elif message.text == 'Hello':
         bot.send_message(message.chat.id,'Нi!',parse_mode = 'html')
-    
+
 
 
 
