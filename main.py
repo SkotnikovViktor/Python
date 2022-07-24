@@ -33,7 +33,7 @@ def get_user_text(message):
     elif message.text == 'Hello':
         bot.send_message(message.chat.id,'Нi!')
     elif message.text == 'Name?':
-        bot.send_message(message.chat.id, 'Bot')
+        bot.send_message(message.chat.id, 'BotOnPython!')
 
 
 
