@@ -25,13 +25,15 @@ def start(message):
 @bot.message_handler()
 def get_user_text(message):
     if message.text == 'Привет!':
-        bot.send_message(message.chat.id,'Привет мой друг!',parse_mode = 'html')
+        bot.send_message(message.chat.id,'Привет мой друг!')
     elif message.text == 'Как дела?':
-        bot.send_message(message.chat.id,'Нормально',parse_mode = 'html')
+        bot.send_message(message.chat.id,'Нормально')
     elif message.text == 'Steam':
         bot.send_message(message.chat.id,a)
     elif message.text == 'Hello':
-        bot.send_message(message.chat.id,'Нi!',parse_mode = 'html')
+        bot.send_message(message.chat.id,'Нi!')
+    elif message.text == 'Name?':
+        bot.send_message(message.chat.id, 'Bot')
 
 
 
