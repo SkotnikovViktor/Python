@@ -11,6 +11,14 @@ with open('file.json','r') as file:
     a = json.load(file)
     b = 222
 
+def ymn():
+    pass 
+def dele():
+    pass 
+def v():
+    pass 
+
+
 
     
 
@@ -34,6 +42,20 @@ def get_user_text(message):
         bot.send_message(message.chat.id,'Нi!')
     elif message.text == 'Name?':
         bot.send_message(message.chat.id, 'BotOnPython!')
+    elif message.text == 'Калькулятор!':
+        bot.send_message(message.chat.id,'Выберите сложение, вычитание, умножение или деление')
+    elif message.text == 'Сложение':
+        bot.send_message(message.chat.id,'Напишите числа!')
+        if message.text == "5":
+            firstnumber = message.text
+            bot.send_message(message.chat.id,firstnumber)
+        elif message.text == "5":
+            secondnumber = message.text
+            bot.send_message(message.chat.id,secondnumber)
+            
+
+    
+    
 
 
 
