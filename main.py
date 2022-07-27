@@ -1,17 +1,8 @@
-
-
-
-
-
-
 # Импорт библиотеки telebot и time
 import telebot
 import json
 # Создание переменной с токеном
 bot = telebot.TeleBot('5505530308:AAGoiiUP5dD6GP6eM_3b5AfHJQrVdDXFXQI')
-
-# Функция которая узнает время
-
 
 with open('file.json','r') as file:
     a = json.load(file)
@@ -25,6 +16,7 @@ def start(message):
 
 
 # Обработка чата и вывод времени 
+# Калькулятор (Добавлен только алгоритм работы(калькулятор не работает!))
 @bot.message_handler()
 def get_user_text(message):
     if message.text == 'Привет!':
@@ -48,8 +40,6 @@ def get_user_text(message):
             secondnumber = message.text
             bot.send_message(message.chat.id,secondnumber)
             
-
-
 # Запуск бота
 bot.polling(none_stop = True)
 
