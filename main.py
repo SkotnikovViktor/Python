@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # Импорт библиотеки telebot и time
 import telebot
 import json
@@ -9,17 +15,6 @@ bot = telebot.TeleBot('5505530308:AAGoiiUP5dD6GP6eM_3b5AfHJQrVdDXFXQI')
 
 with open('file.json','r') as file:
     a = json.load(file)
-    b = 222
-
-def ymn():
-    pass 
-def dele():
-    pass 
-def v():
-    pass 
-
-
-
     
 
 # Создание кнопки в чате [start] + вложенная функция
@@ -54,14 +49,7 @@ def get_user_text(message):
             bot.send_message(message.chat.id,secondnumber)
             
 
-    
-    
-
-
-
-
-
-
 
 # Запуск бота
 bot.polling(none_stop = True)
+
