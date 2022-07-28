@@ -15,7 +15,7 @@ def start(message):
     bot.send_message(message.chat.id,mess,parse_mode = 'html')
 
 
-# Обработка чата и вывод времени 
+
 # Калькулятор (Добавлен только алгоритм работы(калькулятор не работает!))
 @bot.message_handler()
 def get_user_text(message):
@@ -33,12 +33,10 @@ def get_user_text(message):
         bot.send_message(message.chat.id,'Выберите сложение, вычитание, умножение или деление')
     elif message.text == 'Сложение':
         bot.send_message(message.chat.id,'Напишите числа!')
-        if message.text == "5":
-            firstnumber = message.text
-            bot.send_message(message.chat.id,firstnumber)
+        if message.text == "5": 
+            bot.send_message(message.chat.id,'5')
         elif message.text == "5":
-            secondnumber = message.text
-            bot.send_message(message.chat.id,secondnumber)
+            bot.send_message(message.chat.id,'5')
             
 # Запуск бота
 bot.polling(none_stop = True)
