@@ -1,3 +1,4 @@
+# Начало работы
 # Импорт библиотеки telebot и time
 import telebot
 import json
@@ -15,7 +16,7 @@ def start(message):
     bot.send_message(message.chat.id,mess,parse_mode = 'html')
 
 
-######
+
 # Калькулятор (Добавлен только алгоритм работы(калькулятор не работает!))
 @bot.message_handler()
 def get_user_text(message):
@@ -34,7 +35,7 @@ def get_user_text(message):
     else:
         bot.send_message(message.chat.id,'Опа, а вот это уже не понятно!')
 
-#################   
+
 # Запуск бота
 bot.polling(none_stop = True)
 
