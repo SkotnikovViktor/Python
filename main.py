@@ -15,7 +15,7 @@ def start(message):
     bot.send_message(message.chat.id,mess,parse_mode = 'html')
 
 
-
+######
 # Калькулятор (Добавлен только алгоритм работы(калькулятор не работает!))
 @bot.message_handler()
 def get_user_text(message):
