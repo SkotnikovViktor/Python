@@ -34,7 +34,7 @@ def get_user_text(message):
     else:
         bot.send_message(message.chat.id,'Опа, а вот это уже не понятно!')
 
-#            
+#################   
 # Запуск бота
 bot.polling(none_stop = True)
 
