@@ -16,8 +16,7 @@ def start(message):
     bot.send_message(message.chat.id,mess,parse_mode = 'html')
 
 
-
-# Калькулятор (Добавлен только алгоритм работы(калькулятор не работает!))
+# Обработка сообщений пользователя + вложеная функция
 @bot.message_handler()
 def get_user_text(message):
     if message.text == 'Привет!':
@@ -35,7 +34,7 @@ def get_user_text(message):
     else:
         bot.send_message(message.chat.id,'Опа, а вот это уже не понятно!')
 
-
+# Создание вечного цикла
 # Запуск бота
 bot.polling(none_stop = True)
 
